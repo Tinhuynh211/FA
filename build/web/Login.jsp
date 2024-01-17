@@ -15,27 +15,27 @@
 
 <body>
     <div id="wrapper">
-        <form action="" id="form-login">
+        <form action="LoginAccount" id="form-login">
             <h1 class="form-heading">Đăng Nhập</h1>
             <div class="form-group">
                 <i class="far fa-user"></i>
-                <input type="text" class="form-input" placeholder="Username">
+                <input type="text" class="form-input" placeholder="Email" name="Email">
             </div>
             <div class="form-group">
                 <i class="fas fa-key"></i>
-                <input type="password" class="form-input" placeholder="Password">
+                <input type="password" class="form-input" placeholder="Password" name="password">
                 <div id="eye">
                     <i class="far fa-eye"></i>
                 </div>
             </div>  
-            <a style="color:white;" href="#" target="_blank">Forgot Password?</a>
+            <a style="color:white;" href="ForgotPassword.jsp" target="_blank">Forgot Password?</a>
             <input type="submit" value="Đăng nhập" class="form-submit">
             <br>
             <br> 
             <div style="display:flex; justify-content: center;">
                 <p style="color:white; text-align: center; ">Or Login With</p>
-                <a style="margin-left: 10px;"href="https://accounts.google.com/o/oauth2/auth?scope=email&redirect_uri=http://localhost:8080/FAQuestion/Login.jsp&response_type=code
-    &client_id=357909169797-n5m8ikaahjv1at1qblloaksu6asm2ijh.apps.googleusercontent.com&approval_prompt=force" target="_blank"><img src="assets/img/googoo.png" width="25px" height="25px" alt="alt"/></a>
+                <a style="margin-left: 10px;"href="https://accounts.google.com/o/oauth2/auth?scope=profile email&redirect_uri=http://localhost:8080/FAQuestion/LoginGoogleServlet&response_type=code
+                                           &client_id=357909169797-n5m8ikaahjv1at1qblloaksu6asm2ijh.apps.googleusercontent.com&approval_prompt=force" target="_blank"><img src="assets/img/googoo.png" width="25px" height="25px" alt="alt"/></a>
             </div>
         </form>
          

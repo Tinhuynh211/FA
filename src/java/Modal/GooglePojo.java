@@ -6,32 +6,17 @@ package Modal;
 
 /**
  *
- * @author PC
+ * @author ADMIN
  */
-public class GoogleUser {
-
-    private String id;
-    private String email;
-    private boolean verified_email;
-    private String name;
-    private String given_name;
-    private String family_name;
-    private String link;
-    private String picture;
-
-    public GoogleUser() {
-    }
-
-    public GoogleUser(String id, String email, boolean verified_email, String name, String given_name, String family_name, String link, String picture) {
-        this.id = id;
-        this.email = email;
-        this.verified_email = verified_email;
-        this.name = name;
-        this.given_name = given_name;
-        this.family_name = family_name;
-        this.link = link;
-        this.picture = picture;
-    }
+public class GooglePojo {
+  private String id;
+  private String email;
+  private boolean verified_email;
+  private String name;
+  private String given_name;
+  private String family_name;
+  private String link;
+  private String picture;
 
     public String getId() {
         return id;
@@ -99,8 +84,7 @@ public class GoogleUser {
 
     @Override
     public String toString() {
-        return "UserGoogleDTO{" + "id=" + id + ", email=" + email + ", verified_email=" + verified_email + ", name=" + name + ", given_name=" + given_name + ", family_name=" + family_name + ", link=" + link + ", picture=" + picture + '}';
+        return "GooglePojo{" + "id=" + id + ", email=" + email + ", verified_email=" + verified_email + ", name=" + name + ", given_name=" + given_name + ", family_name=" + family_name + ", link=" + link + ", picture=" + picture + '}';
     }
-    
-    
+  
 }

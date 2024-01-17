@@ -4,10 +4,8 @@
  */
 package controller.login;
 
-import Modal.GooglePojo;
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,11 +15,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author ADMIN
  */
-public class LoginGoogleServlet extends HttpServlet {
-    private static final long serialVersionUID = 1L;
-    public LoginGoogleServlet() {
-    super();
-  }
+public class ForgotPasswordServlet extends HttpServlet {
+
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -39,10 +34,10 @@ public class LoginGoogleServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet LoginGoogleServlet</title>");            
+            out.println("<title>Servlet ForgotPasswordServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet LoginGoogleServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet ForgotPasswordServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -60,24 +55,7 @@ public class LoginGoogleServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       String code = request.getParameter("code");
-    if (code == null || code.isEmpty()) {
-      RequestDispatcher dis = request.getRequestDispatcher("Login.jsp");
-      dis.forward(request, response);
-    } else {
-      String accessToken = GoogleUtils.getToken(code);
-      GooglePojo googlePojo = GoogleUtils.getUserInfo(accessToken);
-      request.setAttribute("id", googlePojo.getId()); // password
-            request.setAttribute("email", googlePojo.getEmail()); // == username
-            request.setAttribute("verified_email", googlePojo.isVerified_email());
-            request.setAttribute("name", googlePojo.getName());
-            request.setAttribute("given_name", googlePojo.getGiven_name());
-            request.setAttribute("family_name", googlePojo.getFamily_name());
-            request.setAttribute("link", googlePojo.getLink());
-            request.setAttribute("picture", googlePojo.getPicture());
-      RequestDispatcher dis = request.getRequestDispatcher("Thongtingmail.jsp");
-      dis.forward(request, response);
-    }
+        processRequest(request, response);
     }
 
     /**
@@ -91,7 +69,7 @@ public class LoginGoogleServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        doGet(request, response);
+        processRequest(request, response);
     }
 
     /**
