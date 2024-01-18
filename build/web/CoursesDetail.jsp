@@ -1,6 +1,6 @@
 <%-- 
-    Document   : CoursesDetail.jsp
-    Created on : Jan 10, 2024, 1:04:14 AM
+    Document   : CoursesDetail
+    Created on : Jan 16, 2024, 6:06:11 PM
     Author     : ADMIN
 --%>
 
