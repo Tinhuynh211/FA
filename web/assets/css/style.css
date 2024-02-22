@@ -1568,3 +1568,10 @@ section {
     display:flex;
     
 }
+.navbar-nav li a.active {
+    color: #ff0000; /* Màu sắc của phần tử active */
+    font-weight: bold; /* Hoặc bất kỳ kiểu thiết lập nào khác bạn muốn */
+}
+
+
+

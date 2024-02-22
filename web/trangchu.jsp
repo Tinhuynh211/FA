@@ -35,11 +35,12 @@
 
     <body>
         <%@include file="layouts/Guest/headerGuest.jsp" %> 
+        
         <section id="hero" class="d-flex justify-content-center align-items-center">
             <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
                 <h1>Học Thử Miễn Phí<br>Cùng Chuyên Gia tại FPT Software</h1>
                 <h2>Học viện đào tạo kỹ sư Công nghệ thông tin trực thuộc FPT Software</h2>
-                <a href="courses.html" class="btn-get-started">Tìm hiểu thêm</a>
+                <a href="Courses.jsp" class="btn-get-started">Tìm hiểu thêm</a>
             </div>
         </section><!-- End Hero -->
 
