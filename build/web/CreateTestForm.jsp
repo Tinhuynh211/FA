@@ -8,7 +8,7 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="description">
         <meta content="" name="keywords">
-        <title>Tạo khóa học</title>
+        <title>Tạo test</title>
 
         <!-- Favicons -->
         <link href="assets/img/FPTLOGO.png" rel="icon">
@@ -52,9 +52,16 @@
                 <div class="container" data-aos="fade-up">
 
                     <div class="section-title">
-                        <p>Toán rời rạc</p>  
+                        <p>Test</p>  
                     </div>
-
+                    <div class="row">
+                        <div class="col-lg-6">
+                            Noi hien thi so cau hoi
+                        </div>
+                        <div class="col-lg-6">
+                            Noi hien thi cau hoi
+                        </div>
+                    </div>
                     
                 </div>
             </section><!-- End Popular Courses Section -->

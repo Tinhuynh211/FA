@@ -34,7 +34,7 @@
 
 
     <body>
-        <%@include file="layouts/Admin/headerAdmin.jsp" %> 
+        <%@include file="layouts/Mentor/headerMentor.jsp" %> 
         <section id="hero" class="d-flex justify-content-center align-items-center">
             <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
                 <h1>Học Thử Miễn Phí<br>Cùng Chuyên Gia tại FPT Software</h1>

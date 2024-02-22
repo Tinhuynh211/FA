@@ -8,15 +8,12 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="description">
         <meta content="" name="keywords">
-        <title>Tạo khóa học</title>
+        <title>FPT ACADEMY</title>
 
         <!-- Favicons -->
         <link href="assets/img/FPTLOGO.png" rel="icon">
         <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -38,27 +35,58 @@
 
     <body>
         <%@include file="layouts/Mentor/headerMentor.jsp" %> 
-        <!--        <section id="hero" class="d-flex justify-content-center align-items-center">
-                    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-                        <h1>Học Thử Miễn Phí<br>Cùng Chuyên Gia tại FPT Software</h1>
-                        <h2>Học viện đào tạo kỹ sư Công nghệ thông tin trực thuộc FPT Software</h2>
-                        <a href="courses.html" class="btn-get-started">Tìm hiểu thêm</a>
-                    </div>
-                </section> End Hero -->
+<!--        <section id="hero" class="d-flex justify-content-center align-items-center">
+            <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+                <h1>Học Thử Miễn Phí<br>Cùng Chuyên Gia tại FPT Software</h1>
+                <h2>Học viện đào tạo kỹ sư Công nghệ thông tin trực thuộc FPT Software</h2>
+                <a href="courses.html" class="btn-get-started">Tìm hiểu thêm</a>
+            </div>
+        </section> End Hero -->
 
         <main id="main">
 
-          <section id="popular-courses" class="courses">
+       <section id="popular-courses" class="courses">
                 <div class="container" data-aos="fade-up">
 
                     <div class="section-title">
-                        <p>Toán rời rạc</p>  
+                        <p class="manage-course">Quản lý khóa học</p>
                     </div>
 
-                    
+                    <div class="row" data-aos="zoom-in" data-aos-delay="100">
+
+                        <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+                            <div class="course-item">
+                                <img src="assets/img/Learning.jpg" class="img-fluid" alt="...">
+                                <div class="course-content">
+                                    
+
+                                    <h3><a href="CrudCourse.jsp">Khởi tạo khóa học</a></h3>
+                                    <p>Cung cấp kiến thức từ bài bản đến nâng cao về ngôn ngữ lập trình C chỉ trong 50h đào tạo</p>                       
+                                  
+                                </div>
+                            </div>
+                        </div> <!-- End Course Item-->
+
+                      
+
+                        <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                            <div class="course-item">
+                                <img src="assets/img/Test.jpg" class="img-fluid" alt="...">
+                                <div class="course-content">
+                                    
+
+                                    <h3><a href="CrudTest.jsp">Tạo bài kiểm tra</a></h3>
+                                    <p>Cung cấp kiến thức từ bài bản đến nâng cao về ngôn ngữ lập trình C chỉ trong 50h đào tạo</p>                       
+                                    
+                                </div>
+                            </div>
+                        </div> <!-- End Course Item-->
+
+                    </div>
+
                 </div>
             </section><!-- End Popular Courses Section -->
-
+          
         </main><!-- End #main -->
 
         <!-- ======= Footer ======= -->
@@ -75,7 +103,7 @@
                                 <li> Tòa nhà FPT Complex, đường Nam Kỳ Khởi Nghĩa, Quận Ngũ Hành Sơn, TP Đà Nẵng<br></li>
                                 <li> Tòa nhà FPT Massda, đường số 01, KCN An Đồn, Sơn Trà, Đà Nẵng<br>                            </li>
                             </ul>                                                                                                                
-                            <strong>Email:</strong> FA.DN@fpt.com<br>
+                                <strong>Email:</strong> FA.DN@fpt.com<br>
                             </p>
                         </div>
 
@@ -113,24 +141,24 @@
                 </div>
             </div>
 
+          
+               
+            </div>
+        </footer><!-- End Footer -->
 
+        <div id="preloader"></div>
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-        </div>
-    </footer><!-- End Footer -->
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
 
-    <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        <!-- Template Main JS File -->
+        <script src="assets/js/main.js"></script>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-
-</body>
+    </body>
 
 </html>

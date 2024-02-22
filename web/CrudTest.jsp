@@ -48,14 +48,53 @@
 
         <main id="main">
 
-          <section id="popular-courses" class="courses">
+            <section id="popular-courses" class="courses">
                 <div class="container" data-aos="fade-up">
 
                     <div class="section-title">
-                        <p>Toán rời rạc</p>  
+                        <h2>Kiểm tra</h2>
+                        <p>Chọn khóa học</p>  
                     </div>
 
-                    
+                    <div class="row" data-aos="zoom-in" data-aos-delay="100">
+
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="course-item">
+                                <img src="assets/img/toan.png" class="img-fluid" alt="...">
+                                <div class="course-content">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h4>Discrete Mathematics</h4>
+                                    </div>
+
+                                    <h3><a href="CoursesDetail.jsp">Toán rời rạc</a></h3>
+                                    <p>Cung cấp kiến thức từ bài bản đến nâng cao về toán rời rạc</p>                       
+                                    <div class="testButton">
+                                        <button style="justify-content: center;" type="button" class="btn btn-outline-success"><a href="CreateTestForm.jsp">Tạo bài test</a></button>
+                                        <button style="justify-content: center;" type="button" class="btn btn-outline-success"><a href="TestBank.jsp">Ngân hàng câu hỏi</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End Course Item-->
+
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                            <div class="course-item">
+                                <img src="assets/img/lập trình C.jpg" width="600px" height ="450px" class="img-fluid" alt="...">
+                                <div class="course-content">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h4>C Toturial</h4>
+                                        <p class="price">Free</p>
+                                    </div>
+
+                                    <h3><a href="CoursesDetail.jsp">Lập trình với ngôn ngữ C</a></h3>
+                                    <p>Cung cấp kiến thức từ bài bản đến nâng cao về ngôn ngữ lập trình C chỉ trong 50h đào tạo </p>        
+                                    <div class="testButton">
+                                        <button style="justify-content: center;" type="button" class="btn btn-outline-success"><a href="CreateTestForm.jsp">Tạo bài test</a></button>
+                                        <button style="justify-content: center;" type="button" class="btn btn-outline-success"><a href="TestBank.jsp">Ngân hàng câu hỏi</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End Course Item-->
+                    </div>
                 </div>
             </section><!-- End Popular Courses Section -->
 

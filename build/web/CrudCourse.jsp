@@ -48,14 +48,95 @@
 
         <main id="main">
 
-          <section id="popular-courses" class="courses">
+            <section id="popular-courses" class="courses">
                 <div class="container" data-aos="fade-up">
 
                     <div class="section-title">
-                        <p>Toán rời rạc</p>  
+                        <p class="manage-course">Khởi tạo học phần</p>
                     </div>
 
-                    
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h2>Thanh quản lý</h2>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class=" manage-bar">
+                                    <div class="add">
+                                        <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><span>Thêm khóa</span></a>
+                                    </div>
+                                    <div>
+                                        <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><span>Xóa</span></a>						
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <span class="custom-checkbox">
+                                        <input type="checkbox" id="selectAll">
+                                        <label for="selectAll"></label>
+                                    </span>
+                                </th>
+                                <th>Tên khóa</th>
+                                <th>Ngày khởi tạo</th>
+                                <th>Người khởi tạo</th>
+                                <th>Học viên</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="custom-checkbox">
+                                        <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                        <label for="checkbox1"></label>
+                                    </span>
+                                </td>
+                                <td>Toán rời rạc</td>
+                                <td>29/01/2024</td>
+                                <td>Nguyễn Văn A</td>
+                                <td>25</td>
+                                <td>
+                                    <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                    <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="custom-checkbox">
+                                        <input type="checkbox" id="checkbox2" name="options[]" value="1">
+                                        <label for="checkbox2"></label>
+                                    </span>
+                                </td>
+                                <td>Cơ sở dữ liệu</td>
+                                <td>22/01/2024</td>
+                                <td>Nguyễn Văn B</td>
+                                <td>20</td>
+                                <td>
+                                    <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                    <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <div class="clearfix">
+                        <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+                        <ul class="pagination">
+                            <li class="page-item disabled"><a href="#">Previous</a></li>
+                            <li class="page-item"><a href="#" class="page-link">1</a></li>
+                            <li class="page-item"><a href="#" class="page-link">2</a></li>
+                            <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                            <li class="page-item"><a href="#" class="page-link">4</a></li>
+                            <li class="page-item"><a href="#" class="page-link">5</a></li>
+                            <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
                 </div>
             </section><!-- End Popular Courses Section -->
 
